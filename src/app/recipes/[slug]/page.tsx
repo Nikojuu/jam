@@ -31,6 +31,8 @@ export default async function RecipeDetails({
   const { title, cookingTime, ingredients, method, featuredImage } =
     recipe.fields;
 
+  if (!recipe) return <div>Loading..</div>;
+
   return (
     <div>
       <div className="banner">

@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    CONTENTFUL_SPACE_ID: "c0hxcgu96hfc",
-    CONTENTFUL_ACCESS_KEY: "SJicQmdPdhZd2PuLmxaQmd14O2jqV-2_9VavmyGYmqI",
+    CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
+    CONTENTFUL_ACCESS_KEY: process.env.CONTENTFUL_ACCESS_KEY,
   },
   images: {
     domains: ["images.ctfassets.net"],
