@@ -49,6 +49,7 @@ export default async function Home() {
   });
 
   const data = res.items;
+  if (!data) return <div>Loading..</div>;
 
   return <RecipeList recipes={data} />;
 }
