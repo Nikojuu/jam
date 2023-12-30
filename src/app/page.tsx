@@ -33,7 +33,7 @@ export interface Thumbnail {
     };
   };
 }
-
+export const revalidate = 1;
 export default async function Home() {
   const space: string = process.env.CONTENTFUL_SPACE_ID!;
   const accessToken: string = process.env.CONTENTFUL_ACCESS_KEY!;
